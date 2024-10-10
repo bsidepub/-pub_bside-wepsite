@@ -5,43 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비사이드 보드카 파티</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- script.js 파일 추가 -->
 </head>
 <body>
-    <header>
-        <h1>🎉 B_SIDE VODKA PARTY SEASON 10 🎉</h1>
-        <p>대구대 최고의 파티에 여러분을 초대합니다!</p>
-    </header>
+    <!-- 기존 파티 정보 HTML 코드가 여기 들어있을 거예요 -->
 
-    <section class="event-details">
-        <h2>📅 행사 정보</h2>
-        <ul>
-            <li><strong>날짜:</strong> 2024년 10월 30일</li>
-            <li><strong>시간:</strong> 오후 8시 - 오전 1시</li>
-            <li><strong>장소:</strong> 대구대학교 정문 비사이드 펍</li>
-            <li><strong>입장료:</strong> 남성 20,000원 / 여성 18,000원</li>
-        </ul>
+    <section id="question-board">
+        <h2>📋 방문자 질문 게시판</h2>
+        <div class="question-form">
+            <h3>질문하기</h3>
+            <label for="visitor-name">이름:</label>
+            <input type="text" id="visitor-name" placeholder="이름을 입력하세요">
+            <br>
+            <label for="visitor-question">질문:</label>
+            <textarea id="visitor-question" placeholder="질문을 입력하세요"></textarea>
+            <br>
+            <button onclick="addQuestion()">질문 등록하기</button>
+        </div>
+        <div class="question-list">
+            <h3>질문 목록</h3>
+            <ul id="questions">
+                <!-- 질문이 여기에 추가될 거예요 -->
+            </ul>
+        </div>
     </section>
 
-    <section class="features">
-        <h2>🍹 파티 특징</h2>
-        <ul>
-            <li>15종 이상의 칵테일을 무제한으로 즐길 수 있는 특별한 시간!</li>
-            <li>코스튬을 입고 오시면 무료 입장 혜택!</li>
-            <li>힙합, EDM, K-POP까지! 다양한 음악과 함께!</li>
-            <li>맥주 빨리 마시기 대회, 추첨 이벤트 등 다양한 미니게임 진행!</li>
-        </ul>
-    </section>
-
-    <section class="reservation">
-        <h2>💌 예약하기</h2>
-        <p>지금 예약하고 얼리버드 할인 혜택(2,000원 할인)을 받으세요!</p>
-        <p>아래 버튼을 눌러 [카카오톡 오픈채팅]으로 예약 문의를 해주세요.</p>
-        <a href="https://open.kakao.com/o/sZRwYbJe" class="btn-reserve" target="_blank">지금 예약하기</a>
-    </section>
-
-    <footer>
-        <p>문의: 비사이드 인스타그램 [<a href="https://www.instagram.com/pub_bside/" target="_blank">pub_bside</a>]</p>
-        <p>주소: 대구대학교 정문 비사이드 펍</p>
-    </footer>
+    <!-- 기존의 footer 등이 아래에 위치할 거예요 -->
 </body>
 </html>
